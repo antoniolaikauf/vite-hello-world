@@ -1,5 +1,5 @@
 {
-  "name": "caso",
+  "name": "vite-yu-gi-oh",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,7 +13,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
-    "sass": "^1.69.5",
     "vite": "^5.0.8"
   }
 }

@@ -1,30 +1,36 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script >
+import ComHeader from './components/ComponentHeader.vue'
+
+import ComMain from  './components/ComponentMain.vue'
+
+import ComFooter from './components/ComponentFooter.vue'
+
+export default {
+  components:{
+    ComHeader,
+    ComMain,
+    ComFooter
+  }
+}
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- componente header -->
+  <ComHeader />
+  <!-- componente main -->
+  <ComMain />
+  <!-- componente footer -->
+  <ComFooter/>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<style lang="scss">
+@use './style/general.scss' as *;
+@use './style/partials/variable' as *;
+// cartteristiche di h3 del progetto 
+h3{
+  color: $color_text;
 }
 </style>
+
+<!-- non usare i nomi come i tag del html 
+ -->
