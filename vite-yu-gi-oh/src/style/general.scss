@@ -1,0 +1,17 @@
+// importo di bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// caratteristiche generali 
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+ul{
+    list-style: none;
+}
